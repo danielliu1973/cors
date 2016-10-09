@@ -9,6 +9,14 @@
 <body>
 	<div id="app"></div>
 	<button onclick="download()">Download</button>
+	<div ng-app="myApp">
+		<div class="generic-container" ng-controller="UserController as ctrl">
+			<button type="button" ng-click="ctrl.send()">$http-cors</button>
+			{{ctrl.message}}
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
 	<script src="app.js"></script>
+	<script src="cors_test.js"></script>
 </body>
 </html>
